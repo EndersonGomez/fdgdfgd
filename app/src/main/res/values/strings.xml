@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">RegistroUsuario</string>
+
+    <!-- Recursos del First Fragment-->
+    <string name="boton_ingresar">INGRESAR</string>
+    <string name="boton_salir">SALIR</string>
+    <string name="ejemploTv">22.324.323-5</string>
+    <string name="buton_1">1</string>
+    <string name="buton_2">2</string>
+    <string name="buton_3">3</string>
+    <string name="buton_raya">-</string>
+    <string name="buton_4">4</string>
+    <string name="buton_5">5</string>
+    <string name="buton_6">6</string>
+    <string name="buton_k">k</string>
+    <string name="buton_7">7</string>
+    <string name="buton_8">8</string>
+    <string name="buton_9">9</string>
+    <string name="buton_0">0</string>
+
+    <!-- Recursos del Second Fragment-->
+    <string name="tv_nombre">NOMBRE</string>
+    <string name="tv_rut">RUT</string>
+    <string name="tv_cargo">CARGO</string>
+    <string name="tv_horario">HORARIO</string>
+    <string name="button_confirmar_datos">CONFIRMAR</string>
+
+    <!-- Recursos del Third Fragment-->
+    <string name="registrar_ronda">REGISTRAR RONDA</string>
+    <string name="cerrar_turno">CERRAR TURNO</string>
+
+
+</resources>

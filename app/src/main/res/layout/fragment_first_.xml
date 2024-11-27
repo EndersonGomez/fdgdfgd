@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".First_Fragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRutMostrar"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/design_default_color_secondary"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/ejemploTv"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@id/llPrimeraLinea"
+        app:layout_constraintEnd_toStartOf="@id/bton_Borrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <ImageButton
+        android:id="@+id/bton_Borrar"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/boton_customizado"
+        android:gravity="center"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/baseline_backspace_24"
+        android:text="@string/buton_1"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@id/llPrimeraLinea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvRutMostrar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
+
+    <LinearLayout
+        android:id="@+id/llPrimeraLinea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRutMostrar">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivNumero1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="18dpdp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_1"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivNumero2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_2"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toEndOf="@+id/ivNumero1"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivNumero3"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_3"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toEndOf="@+id/ivNumero2"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSegundaLinea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llPrimeraLinea">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivNumero4"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_4"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivNumero5"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_5"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toEndOf="@id/ivNumero4"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivNumero6"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_6"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toEndOf="@id/ivNumero5"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTerceraLinea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llSegundaLinea">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivNumero7"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_7"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivNumero8"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_8"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toEndOf="@id/ivNumero7"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivNumero9"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_9"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toEndOf="@id/ivNumero8"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCuartaLinea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llTerceraLinea">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivGuion"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_raya"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivNumero0"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_0"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toEndOf="@id/ivGuion"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp"
+            tools:ignore="NotSibling" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivK"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            android:backgroundTint="#08BAC1"
+            android:text="@string/buton_k"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toEndOf="@id/ivNumero0"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tvEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_200"
+        android:gravity="center"
+        android:text="@string/boton_ingresar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:cornerRadius="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llCuartaLinea" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tvSalida"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_700"
+        android:gravity="center"
+        android:text="@string/boton_salir"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:cornerRadius="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEntrada" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
