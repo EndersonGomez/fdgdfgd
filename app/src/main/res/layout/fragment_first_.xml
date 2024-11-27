@@ -59,7 +59,7 @@
             android:id="@+id/ivNumero1"
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:layout_marginStart="18dpdp"
+            android:layout_marginStart="18dp"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
             android:backgroundTint="#08BAC1"
